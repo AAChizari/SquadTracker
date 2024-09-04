@@ -1,0 +1,22 @@
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="120" height="120" rx="15" fill="black" filter="url(#glow)" />
+  <text
+    x="60"
+    y="85"
+    text-anchor="middle"
+    fill="white"
+    font-size="60"
+    font-family="Bodoni, serif"
+    font-weight="bold"
+    filter="url(#glow)"
+  >AAC</text>
+</svg>

@@ -1,0 +1,43 @@
+notiz zum uplouad für github
+
+1. hinzufügen con code sippiet in next.config.mjs file 
+
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+
+
+  2. hinzufügen con code sippiet in packege.js file 
+
+
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "export": "next export"
+},
+
+npm run build
+npm run export
+
+cd out
+git init
+git add .
+git commit -m "Initial commit for GitHub Pages"
+
+
+   cd out
+
+      git init
+   git add .
+   git commit -m "Initial commit for GitHub Pages"
+
+      git checkout -b gh-pages
+
+
+   git remote add origin https://github.com/AAChizari/aacPortfolio.git
+
+
+      git push -u origin gh-pages
