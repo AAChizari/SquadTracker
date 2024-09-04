@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  basePath: '/SquadTracker',
+  assetPrefix: '/SquadTracker/',
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/aacPortfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/aacPortfolio/' : '',
-  
   webpack(config) {
     // Grab the existing rule that handles SVG imports
     const fileLoaderRule = config.module.rules.find((rule) =>
